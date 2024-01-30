@@ -16,17 +16,8 @@ public class Pizza {
     @Column(name = "flavor", nullable = false, length = 80)
     private String flavor;
 
-    @Column(name = "size", length = 40)
-    private String size;
-
-    @Column(name = "price", nullable = false, precision = 5, scale = 2)
-    private BigDecimal price;
-
     @Column(name = "createdAt", insertable = false, updatable = false)
     private LocalDateTime createdAt;
-
-    @Column(name = "updatedAt", insertable = false, updatable = false)
-    private LocalDateTime updatedAt;
 
     // Constructors, getters, and setters
 
@@ -42,19 +33,7 @@ public class Pizza {
         return flavor;
     }
 
-    public String getSize() {
-        return size;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
     public LocalDateTime getCreatedAt() {
         return createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
     }
 }

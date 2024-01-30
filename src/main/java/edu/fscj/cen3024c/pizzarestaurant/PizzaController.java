@@ -19,9 +19,7 @@ public class PizzaController {
         List<Pizza> pizzas = pizzaService.getAllPizzas();
         for (Pizza pizza : pizzas) {
             System.out.println("Pizza ID: " + pizza.getPizzaId() +
-                    ", Flavor: " + pizza.getFlavor() +
-                    ", Size: " + pizza.getSize() +
-                    ", Price: " + pizza.getPrice());
+                    ", Flavor: " + pizza.getFlavor());
         }
     }
 }

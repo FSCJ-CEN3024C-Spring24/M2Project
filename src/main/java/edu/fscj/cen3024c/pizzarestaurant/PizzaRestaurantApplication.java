@@ -1,6 +1,5 @@
 package edu.fscj.cen3024c.pizzarestaurant;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 // application's main class to display the pizzas.
 
 @SpringBootApplication
-public class PizzaRestaurantApplication implements CommandLineRunner {
+public class PizzaRestaurantApplication {
 	private final PizzaController pizzaController;
 
 	public PizzaRestaurantApplication(PizzaController pizzaController) {
@@ -21,11 +20,5 @@ public class PizzaRestaurantApplication implements CommandLineRunner {
 	public static void main(String[] args) {
 
 		SpringApplication.run(PizzaRestaurantApplication.class, args);
-	}
-
-	@Override
-	public void run(String... args) {
-		// Call the displayAllPizzas method from the PizzaController
-		pizzaController.displayAllPizzas();
 	}
 }
