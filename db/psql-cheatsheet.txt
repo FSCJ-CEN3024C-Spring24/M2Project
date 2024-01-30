@@ -1,0 +1,19 @@
+Names which use upper case must be in double quotes
+Use lower case (default) for table names so JPA/Hibernate annotation works
+
+c:\"Program Files"\PostgreSQL\16\bin\psql -U postgres -d dbname
+(postgres is default DB)
+
+    or just 
+
+c:\"Program Files"\PostgreSQL\16\bin\psql -U postgres
+(to create/drop a DB)
+
+P@ssw0rd1 (on Horizon)
+
+\l to list databases
+\c dbname to connect to a db
+\dt to list tables and relationships (reports everything as "relations")
+\dt+ for extended details
+\dn to list schemas
+\q to quit
